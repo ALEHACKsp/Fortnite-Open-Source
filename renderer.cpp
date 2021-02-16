@@ -1097,79 +1097,7 @@ namespace rend {
 							}
 						}
 					}
-					else if (Settings.ESP.Memes)
-					{
-						if (wcsstr(name.c_str(), xorstr(L"Rock")))
-						{
-							auto RockRoot = Util::GetPawnRootLocation(pawn);
-							if (RockRoot) {
-								auto RockPos = *RockRoot;
-								float dx = localPlayerLocation[0] - RockPos.X;
-								float dy = localPlayerLocation[1] - RockPos.Y;
-								float dz = localPlayerLocation[2] - RockPos.Z;
-
-								if (Util::WorldToScreen(width, height, &RockPos.X)) {
-									float dist = Util::SpoofCall(sqrtf, dx * dx + dy * dy + dz * dz) / 100.0f;
-
-									if (dist < 200)
-									{
-										DrawOutlinedText(m_pFont, TextFormat(xorstr("Rock [%.0f m]"), dist), ImVec2(RockPos.X, RockPos.Y), 14.5f, ImGui::GetColorU32({ 0.70f, 0.70f, 0.70f, 1.f }), true);
-									}
-								}
-							}
-						}
-						else if (wcsstr(name.c_str(), xorstr(L"Tree")) || wcsstr(name.c_str(), xorstr(L"Pine")))
-						{
-							auto TreeRoot = Util::GetPawnRootLocation(pawn);
-							if (TreeRoot) {
-								auto TreePos = *TreeRoot;
-								float dx = localPlayerLocation[0] - TreePos.X;
-								float dy = localPlayerLocation[1] - TreePos.Y;
-								float dz = localPlayerLocation[2] - TreePos.Z;
-
-								if (Util::WorldToScreen(width, height, &TreePos.X)) {
-									float dist = Util::SpoofCall(sqrtf, dx * dx + dy * dy + dz * dz) / 100.0f;
-
-									if (dist < 200)
-									{
-										DrawOutlinedText(m_pFont, TextFormat(xorstr("Tree [%.0f m]"), dist), ImVec2(TreePos.X, TreePos.Y), 14.5f, ImGui::GetColorU32({ 0.0f, 0.95f, 0.0f, 1.f }), true);
-									}
-								}
-							}
-						}
-						else if (wcsstr(name.c_str(), xorstr(L"Bush")))
-						{
-							auto BushRoot = Util::GetPawnRootLocation(pawn);
-							if (BushRoot) {
-								auto BushPos = *BushRoot;
-								float dx = localPlayerLocation[0] - BushPos.X;
-								float dy = localPlayerLocation[1] - BushPos.Y;
-								float dz = localPlayerLocation[2] - BushPos.Z;
-
-								if (Util::WorldToScreen(width, height, &BushPos.X)) {
-									float dist = Util::SpoofCall(sqrtf, dx * dx + dy * dy + dz * dz) / 100.0f;
-
-									if (dist < 200)
-									{
-										DrawOutlinedText(m_pFont, TextFormat(xorstr("Bush [%.0f m]"), dist), ImVec2(BushPos.X, BushPos.Y), 14.5f, ImGui::GetColorU32({ 0.2f, 1.f, 0.2f, 1.f }), true);
-									}
-								}
-							}
-						}
-					}
-
 				}
-			}
-			if (Settings.ESP.debug2)
-			{
-
-				DrawNormalText(m_pFont, TextFormat(xorstr("UWorld: %p"), world), ImVec2(2, 370), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Localplayer: %p"), localPlayer), ImVec2(2, 390), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Gameinstance: %p"), gameInstance), ImVec2(2, 410), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Playercontroller: %p"), localPlayerController), ImVec2(2, 430), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Localpawn: %p"), localPlayerPawn), ImVec2(2, 450), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Rootromponent: %p"), localPlayerRoot), ImVec2(2, 470), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
-				DrawNormalText(m_pFont, TextFormat(xorstr("Playerstate: %p"), localPlayerState), ImVec2(2, 490), 14.5f, ImGui::GetColorU32({ 255, 255, 255, 255 }), false);
 			}
 
 			if (Settings.Info)
