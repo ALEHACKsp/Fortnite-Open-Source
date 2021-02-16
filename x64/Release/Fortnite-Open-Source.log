@@ -1,11 +1,112 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
 cl : command line warning D9025: overriding '/sdl' with '/GS-'
-  dllmain.cpp
+  renderer.cpp
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(157,41): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(159,41): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(359,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(384,141): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(384,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(384,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(385,141): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(385,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(385,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(386,141): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(386,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(386,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(387,141): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(387,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(387,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(388,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(388,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(393,101): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(393,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(393,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(393,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(393,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(397,99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(397,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(397,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(397,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(397,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(401,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(402,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(405,159): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(405,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(405,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(405,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(406,159): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(406,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(406,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(406,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(407,167): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(407,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(407,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(407,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(408,167): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(408,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(408,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(408,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(409,167): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(409,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(409,73): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(409,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(410,167): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(410,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(410,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(410,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(411,175): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(411,86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(411,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(411,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(412,175): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(412,86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(412,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(412,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(415,103): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(415,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(415,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(415,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(416,103): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(416,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(416,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(416,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(417,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(417,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(417,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(417,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(418,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(418,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(418,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(418,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(419,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(419,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(419,73): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(419,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(420,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(420,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(420,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(420,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(421,119): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(421,86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(421,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(421,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(422,119): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(422,86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(422,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(422,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1681,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1687,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1695,103): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1695,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1695,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1695,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1695,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
      Creating library ..\modmap\test.lib and object ..\modmap\test.exp
 LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  0 of 2367 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+D:\Users\ytmcg\Documents\GitHub\Fortnite-Open-Source\renderer.cpp(1691): warning C4700: uninitialized local variable 'X' used
+  542 of 2367 functions (22.9%) were compiled, the rest were copied from previous compilation.
+    537 functions were new in current compilation
+    17 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Fortnite-Open-Source.vcxproj -> D:\Users\ytmcg\Documents\GitHub\modmap\test.dll
