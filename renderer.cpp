@@ -121,7 +121,6 @@ namespace rend {
 	float color_blue = 0;
 	float color_random = 0.0;
 	float color_speed = -10.0;
-	
 
 
 	void ColorChange()
@@ -148,10 +147,69 @@ namespace rend {
 		ColorChange();
 		window.DrawList->PushClipRectFullScreen();
 		ImGui::End();
+
+		
 		if (showMenu)
 		{
+			ImGui::StyleColorsClassic();
+			ImGuiStyle* style = &ImGui::GetStyle();
+
+			style->WindowPadding = ImVec2(15, 15);
+			style->WindowRounding = 5.0f;
+			style->FramePadding = ImVec2(5, 5);
+			style->FrameRounding = 4.0f;
+			style->ItemSpacing = ImVec2(12, 8);
+			style->ItemInnerSpacing = ImVec2(8, 6);
+			style->IndentSpacing = 25.0f;
+			style->ScrollbarSize = 15.0f;
+			style->ScrollbarRounding = 9.0f;
+			style->GrabMinSize = 5.0f;
+			style->GrabRounding = 3.0f;
+
+			style->Colors[ImGuiCol_Text] = ImVec4(0.80f, 0.80f, 0.83f, 1.00f);
+			style->Colors[ImGuiCol_TextDisabled] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
+			style->Colors[ImGuiCol_WindowBg] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
+			style->Colors[ImGuiCol_ChildWindowBg] = ImVec4(0.07f, 0.07f, 0.09f, 1.00f);
+			style->Colors[ImGuiCol_PopupBg] = ImVec4(0.07f, 0.07f, 0.09f, 1.00f);
+			style->Colors[ImGuiCol_Border] = ImVec4(0.80f, 0.80f, 0.83f, 0.88f);
+			style->Colors[ImGuiCol_BorderShadow] = ImVec4(0.92f, 0.91f, 0.88f, 0.00f);
+			style->Colors[ImGuiCol_FrameBg] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
+			style->Colors[ImGuiCol_FrameBgActive] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_TitleBg] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_TitleBgCollapsed] = ImVec4(1.00f, 0.98f, 0.95f, 0.75f);
+			style->Colors[ImGuiCol_TitleBgActive] = ImVec4(0.07f, 0.07f, 0.09f, 1.00f);
+			style->Colors[ImGuiCol_MenuBarBg] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_ScrollbarBg] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_ScrollbarGrab] = ImVec4(0.80f, 0.80f, 0.83f, 0.31f);
+			style->Colors[ImGuiCol_ScrollbarGrabHovered] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_ScrollbarGrabActive] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
+			style->Colors[ImGuiCol_CheckMark] = ImVec4(0.80f, 0.80f, 0.83f, 0.31f);
+			style->Colors[ImGuiCol_SliderGrab] = ImVec4(0.80f, 0.80f, 0.83f, 0.31f);
+			style->Colors[ImGuiCol_SliderGrabActive] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
+			style->Colors[ImGuiCol_Button] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_ButtonHovered] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
+			style->Colors[ImGuiCol_ButtonActive] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_Header] = ImVec4(0.10f, 0.09f, 0.12f, 1.00f);
+			style->Colors[ImGuiCol_HeaderHovered] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_HeaderActive] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
+			style->Colors[ImGuiCol_Column] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_ColumnHovered] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
+			style->Colors[ImGuiCol_ColumnActive] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_ResizeGrip] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
+			style->Colors[ImGuiCol_ResizeGripHovered] = ImVec4(0.56f, 0.56f, 0.58f, 1.00f);
+			style->Colors[ImGuiCol_ResizeGripActive] = ImVec4(0.06f, 0.05f, 0.07f, 1.00f);
+			style->Colors[ImGuiCol_PlotLines] = ImVec4(0.40f, 0.39f, 0.38f, 0.63f);
+			style->Colors[ImGuiCol_PlotLinesHovered] = ImVec4(0.25f, 1.00f, 0.00f, 1.00f);
+			style->Colors[ImGuiCol_PlotHistogram] = ImVec4(0.40f, 0.39f, 0.38f, 0.63f);
+			style->Colors[ImGuiCol_PlotHistogramHovered] = ImVec4(0.25f, 1.00f, 0.00f, 1.00f);
+			style->Colors[ImGuiCol_TextSelectedBg] = ImVec4(0.25f, 1.00f, 0.00f, 0.43f);
+			style->Colors[ImGuiCol_ModalWindowDarkening] = ImVec4(1.00f, 0.98f, 0.95f, 0.73f);
+
+			style->WindowTitleAlign.x = 0.50f;
+			style->FrameRounding = 2.0f;
 			if (ImGui::Begin(xorstr("ytmcgamer/Fortnite-Open-Source"), 0, ImGuiWindowFlags_::ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_::ImGuiWindowFlags_NoResize)) {
-				ImGui::SetWindowSize(ImVec2(304, 238.0f));
+				ImGui::SetWindowSize(ImVec2(430, 400));
 				static int tabs = 0;
 				if (ImGui::Button("Aimbot", ImVec2(95.0f, 20.f)))
 					tabs = 0; ImGui::SameLine(NULL, 0.8);
@@ -162,7 +220,7 @@ namespace rend {
 				switch (tabs)
 				{
 				case 0:
-					ImGui::Checkbox("Enable", &Settings.Aimbot);
+					ImGui::Checkbox("Enable Aimbot", &Settings.Aimbot);
 					bool clickedH = ImGui::Checkbox("Memory aim", &Settings.SilentAimbot);
 					if (clickedH && Settings.SilentAimbot) {
 						Settings.Silent = false;
@@ -171,7 +229,7 @@ namespace rend {
 					{ 
 						Settings.SilentAimbot = true; 
 					}
-					bool clickedB = ImGui::Checkbox("Perfect Silent", &Settings.Silent);
+					bool clickedB = ImGui::Checkbox("Silent", &Settings.Silent);
 					if (clickedB && Settings.Silent) 
 					{
 						Settings.SilentAimbot = false;
@@ -180,8 +238,8 @@ namespace rend {
 					{
 						Settings.Silent = true;
 					}
-					ImGui::SliderFloat("FOV", &Settings.AimbotFOV, 1.0f, 1500.0f, ("%2.f"));
-					ImGui::SliderFloat("SMOOTH", &Settings.AimbotSlow, 0.f, 20.0f, ("%0.f"));
+					ImGui::SliderFloat("Aimbot Fov", &Settings.AimbotFOV, 1.0f, 1500.0f, ("%2.f"));
+					ImGui::SliderFloat("Smooth", &Settings.AimbotSlow, 0.f, 20.0f, ("%0.f"));
 					ImGui::Combo("Aimbot key", &niggggga, aimkeyandshit, sizeof(aimkeyandshit) / sizeof(*aimkeyandshit));
 					ImGui::Combo("Hitbox", &Settings.HitBoxPos, hitboxes, sizeof(hitboxes) / sizeof(*hitboxes));
 				}
@@ -189,19 +247,19 @@ namespace rend {
 				{
 				case 1:
 					ImGui::Checkbox("Skeleton", &Settings.ESP.Skeletons);
-					ImGui::Checkbox("Box", &Settings.ESP.Skeletons);
-					ImGui::Checkbox("Nicknames", &Settings.ESP.PlayerNames);
-					ImGui::Checkbox("Snaplines", &Settings.ESP.PlayerLines);
-					ImGui::Checkbox("Weapons", &Settings.ESP.PlayerWeapons);
-					ImGui::SliderFloat("ESP distance", &Settings.espdistancee, 110.0f, 400.0f, ("%2.f"));
+					ImGui::Checkbox("Boxes", &Settings.ESP.Boxes);
+					ImGui::Checkbox("Player Names", &Settings.ESP.PlayerNames);
+					ImGui::Checkbox("Player Lines", &Settings.ESP.PlayerLines);
+					ImGui::Checkbox("Player Weapons", &Settings.ESP.PlayerWeapons);
+					ImGui::SliderFloat("Player Distance", &Settings.espdistancee, 110.0f, 400.0f, ("%2.f"));
 				}
 				switch (tabs)
 				{
 				case 2:
 					ImGui::Checkbox("No weapon spread", &hooks::NoSpread);
+					ImGui::Checkbox("player fly", &Settings.teleportation);
 					ImGui::Checkbox("Killaura [F2 to disable] [Pickaxe & In vehicle]", &Settings.killaura);
 					ImGui::Checkbox("Invisible", &Settings.invisiblelol);
-					ImGui::Checkbox("Vehicle teleport [F3 to use]", &Settings.teleportation);
 					ImGui::Checkbox("Speedhack [shift] [custom]", &Settings.FastReload);
 					if (Settings.invisiblelol) {
 						hooks::SetPlayerVisibility(1);
@@ -551,43 +609,9 @@ namespace rend {
 			auto isCrossbow = wcsstr(weaponName.c_str(), xorstr(L"Crossbow"));
 			auto isBoomBow = wcsstr(weaponName.c_str(), xorstr(L"ExplosiveBow"));
 
-			/*bulletspeed offset : 0xbf4
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xbf8
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xbfc
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xbf4
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xbf8
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xbfc
-				bulletspeed : 30000.000000
-				bulletspeed offset : 0xd18
-				*/
 
 			if (isProjectileWeapon || isRocketLauncher || isGrenadeLauncher || isCrossbow || isBoomBow)
 			{
-				//Snipers = 30000
-				/*for (int offs = 0; offs < 0xfff; offs++)
-				{
-					float bulletInitialSpeed = ReadFloat(localPlayerWeapon, offs);
-
-					if (bulletInitialSpeed == 30000)
-					{
-						std::printf(xorstr("bulletspeed offset: 0x%llx\n"), offs);
-						std::printf(xorstr("bulletspeed: %f\n"), bulletInitialSpeed);
-					}
-				}*/
-				//float bulletInitialSpeed = ReadFloat(localPlayerWeapon, 0xd18);
-				//std::printf(xorstr("bulletspeed: %f\n"), bulletInitialSpeed);
-
-			/*	float Shells_Velocity = ReadFloat(localPlayerWeapon, 0xf60);
-				float Shells_Gravity = ReadFloat(localPlayerWeapon, 0xf6c);
-
-				std::printf(xorstr("Shells_Velocity: %f\n"), Shells_Velocity);
-				std::printf(xorstr("Shells_Gravity: %f\n"), Shells_Gravity);
-				*/
 				if (Settings.BulletTP)
 				{
 					Settings.IsBulletTeleporting = true;
@@ -624,57 +648,7 @@ namespace rend {
 
 			hooks::IsSniper = isProjectileWeapon;
 			std::vector<PVOID> playerPawns;
-			/*
-							auto ulevel = ReadPointer(world, 0x30);
-							if (!ulevel) break;
-
-							auto actors = ReadPointer(ulevel, 0x98);
-							if (!actors) break;
-
-							int actor_count = ReadInt(ulevel, 0xA0);
-
-
-							for (int i = 0; i < actor_count; i++)
-							{
-								auto CurrentActor = ReadPointer(actors, i * 0x8);
-								if (!CurrentActor) break;
-
-								auto TargetActor = reinterpret_cast<UObject*>(ReadPointer(actors, i * sizeof(PVOID)));
-								if (!TargetActor) continue;
-
-								auto mesh = ReadPointer(TargetActor, offsets::Character::Mesh);
-								if (!mesh) continue;
-
-								auto bones = ReadPointer(mesh, offsets::StaticMeshComponent::StaticMesh);
-								if (!bones) bones = ReadPointer(mesh, offsets::StaticMeshComponent::StaticMesh + 0x10);
-								if (!bones) continue;
-
-								float compMatrix[4][4] = { 0 };
-								Util::ToMatrixWithScale(reinterpret_cast<float*>(reinterpret_cast<PBYTE>(mesh) + offsets::StaticMeshComponent::ComponentToWorld), compMatrix);
-
-								float root[3] = { 0 };
-								float head[3] = { 0 };
-
-								Util::GetBoneLocation(compMatrix, bones, 0, root);
-								Util::GetBoneLocation(compMatrix, bones, 66, head);
-
-								head[2] += 15;
-								root[2] -= 10;
-								auto headPos = *reinterpret_cast<FVector*>(head);
-								auto bottomPos = *reinterpret_cast<FVector*>(root);
-
-								if (Util::WorldToScreen(width, height, &bottomPos.X) && Util::WorldToScreen(width, height, &headPos.X))
-								{
-									float BoxHeight = (float)(headPos.Y - bottomPos.Y);
-									float BoxWidth = BoxHeight * 0.380f;
-
-									float LeftX = (float)headPos.X - (BoxWidth / 1);
-									float LeftY = (float)bottomPos.Y;
-									auto BoxColor = ImGui::GetColorU32({ 255, 255,255, 255 });
-									DrawRoundedRect(LeftX, LeftY, headPos.X + BoxWidth, headPos.Y, BoxColor, 1.5);
-								}
-							}
-			*/
+			
 			for (auto li = 0UL; li < ReadDWORD(world, offsets::World::Levels + sizeof(PVOID)); ++li) {
 				auto levels = ReadPointer(world, offsets::World::Levels);
 				if (!levels) break;
@@ -752,50 +726,17 @@ namespace rend {
 
 						CHAR text[0xFF] = { 0 };
 						wcstombs(text, itemName->c_str() + (isAmmo ? 6 : 0), sizeof(text));
-						if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 0)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 1)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 2)
-						{
-							ItemColor = ImGui::GetColorU32({ 0.0f, 0.95f, 0.0f, 0.95f });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 3)
-						{
-							ItemColor = ImGui::GetColorU32({ 0.4f, 0.65f, 1.0f, 0.95f });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 4)
-						{
-							ItemColor = ImGui::GetColorU32({ 0.7f, 0.25f, 0.85f, 0.95f });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 5)
-						{
-							ItemColor = ImGui::GetColorU32({ 0.85f, 0.65f, 0.0f, 0.95f });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 6)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 7)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 8)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 9)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
-						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 10)
-						{
-							ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 });
-						}
+						if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 0) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 1) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 2) { ItemColor = ImGui::GetColorU32({ 0.0f, 0.95f, 0.0f, 0.95f }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 3) { ItemColor = ImGui::GetColorU32({ 0.4f, 0.65f, 1.0f, 0.95f }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 4) { ItemColor = ImGui::GetColorU32({ 0.7f, 0.25f, 0.85f, 0.95f }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 5) { ItemColor = ImGui::GetColorU32({ 0.85f, 0.65f, 0.0f, 0.95f }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 6) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 7) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 8) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 9) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
+						else if (ReadBYTE(item, offsets::FortItemDefinition::Tier) == 10) { ItemColor = ImGui::GetColorU32({ 255, 255, 255, 255 }); }
 						auto ItemRoot = Util::GetPawnRootLocation(pawn);
 						if (ItemRoot) {
 							auto ItemPos = *ItemRoot;
