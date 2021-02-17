@@ -392,9 +392,11 @@ namespace Util {
 	{
 
 		// GObjects
+		// 48 89 05 ? ? ? ? E8 ? ? ? ? 40 84 F6 new2
+		// x  x  x  ? ? ? ? x  ? ? ? ? x  x  x 
 		//48 ? ? ? ? ? ? 48 98 4C 8B 04 D1 48 8D 0C 40 49 8D 04 C8 EB 02		new
 		//48 8B 0D ? ? ? ? 48 98 4C 8B 04 D1 48 8D 0C 40 49 8D 04 C8 EB ?
-		auto addr = FindPattern(xorstr("\x48\x00\x00\x00\x00\x00\x00\x48\x98\x4C\x8B\x04\xD1\x48\x8D\x0C\x40\x49\x8D\x04\xC8\xEB\x02"), xorstr("x??????xxxxxxxxxxxxxxxx"));
+		auto addr = FindPattern(xorstr("\x48\x89\x05\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x40\x84\xF6"), xorstr("xxx????x????xxx"));
 		//auto addr = FindPattern(xorstr(""), xorstr(""));
 		objects = reinterpret_cast<decltype(objects)>(RELATIVE_ADDR(addr, 7));
 		if (!addr) {
