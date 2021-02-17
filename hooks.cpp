@@ -423,24 +423,8 @@ namespace hooks {
 						}
 					}
 				}
-				if (Settings.teleportation) {
-					if (hooks::LocalPlayerPawn && hooks::LocalPlayerController) {
-						if (Util::SpoofCall(GetAsyncKeyState, VK_F3)) {
-							if (IsLocalPlayerInVehicle) {
-								/*auto bones = offsets::StaticMeshComponent::StaticMesh;
-								if (!bones) continue;
-								auto mesh = offsets::Character::Mesh;
-								float compMatrix[4][4] = { 0 };
-								Util::ToMatrixWithScale(reinterpret_cast<float*>(reinterpret_cast<PBYTE>(mesh) + offsets::StaticMeshComponent::ComponentToWorld), compMatrix);
-								float root[3] = { 0 };*/
-								Sleep(150);
-								//ProcessEvent(hooks::LocalPlayerController, addresses::ClientSetLocation, root, 0);
-								//ProcessEvent(hooks::LocalPlayerController, addresses::ClientSetLocation, compMatrix, 0);
 
-							}
-						}
-					}
-				}
+				
 				if (Settings.FastReload)
 				{
 					//if (hooks::LocalPlayerPawn && hooks::LocalPlayerController)
