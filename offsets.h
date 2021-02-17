@@ -42,8 +42,6 @@ namespace addresses
 	extern PVOID ReloadTime;
 	extern PVOID ClientSetRotation;
 
-
-
 }
 
 
@@ -52,7 +50,7 @@ namespace offsets
 {
 	enum Main : uint64_t
 	{
-		UWorld = 0x9A048E0, //maybe outdated
+		UWorld = 0x998ac00, //maybe outdated
 	};
 
 	enum World : uint64_t
@@ -147,7 +145,7 @@ namespace offsets
 
 	enum FortPlayerStateAthena : uint64_t
 	{
-		TeamIndex = 0xEC0,
+		TeamIndex = 0x0EC0,
 	};
 
 	enum FortWeapon : uint64_t
